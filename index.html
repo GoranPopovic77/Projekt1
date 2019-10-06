@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>Responsy</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=0, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/media.css" type="text/css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" />
+    <script src="http://maps.googleapis.com/maps/api/js"></script>
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=your key here" async defer></script> -->
+    <script>
+      function initialize() {
+        var mapProp = {
+          center: new google.maps.LatLng(44.2104, 17.9000),
+          zoom: 15,
+          mapTypeId: google.maps.MapTypeId.ROADMAP,
+          scrollwheel: false
+        };
+
+        var image = {
+          url: 'css/img/icon-map.png',
+          size: new google.maps.Size(64, 64)
+        };
+
+        var map = new google.maps.Map(document.getElementById("contact-map"), mapProp);
+
+        var marker = new google.maps.Marker({
+          map: map,
+          position: mapProp.center,
+          animation: google.maps.Animation.DROP,
+          title: "ZeForge, Zmaja od Bosne, Zenica",
+          icon: image,
+          scrollwheel: mapProp.scrollwheel
+        });
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+  </head>
+  <body>
+    <header>
+      <div class="Center">
+        <div class="site-logo">
+          <h1><a href="#">Re<span>spo</span>nsy</a></h1>
+        </div>
+        <div class="menumobile">
+          <input type="checkbox" id="my-dropdown" value="" name="my-checkbox">
+          <label for="my-dropdown">
+            Menu
+          </label>
+          <ul>
+            <li>
+              <a href="#home">Home</a>
+            </li>
+            <li>
+              <a href="#about">About</a>
+            </li>
+            <li>
+              <a href="#services">Services</a>
+            </li>
+            <li>
+              <a href="#pricing">Pricing</a>
+            </li>
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <nav role="navigation" class="Navigation">
+          <ul>
+            <li class="active">
+              <a href="#home">Home</a>
+              <span class="menu-item-bg"></span>
+            </li>
+            <li>
+              <a href="#about">About</a>
+              <span class="menu-item-bg"></span>
+            </li>
+            <li>
+              <a href="#services">Services</a>
+              <span class="menu-item-bg"></span>
+            </li>
+            <li>
+              <a href="#pricing">Pricing</a>
+              <span class="menu-item-bg"></span>
+            </li>
+            <li>
+              <a href="#contact">Contact</a>
+              <span class="menu-item-bg"></span>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main role="main">
+      <section role="banner" class="Banner" id="home">
+        <div class="bannerside">
+          <div class="Center">
+            <div class="leftside">
+              <h3>Responsive<span>Mobile Friendly</span></h3>
+              <p>Our task is to create a responsible website using only HTML5 and CSS3, and it is up to you to evaluate our efforts </p>
+              <a href="#about">MORE DETAILS</a>
+            </div>
+            <div class="rightside">
+              <div class="slider">
+                <ul>
+                  <li id="slide1" class="slide">
+                    <img src="css/img/Slider-img3.jpg">
+                    <a href="#slide3" class="previous">&#8249;</a>
+                    <a href="#slide2" class="next">&#8250;</a>
+                  </li>
+                  <li id="slide2" class="slide">
+                    <img src="css/img/Slider-img2.jpg">
+                    <a href="#slide1" class="previous">&#8249;</a>
+                    <a href="#slide3" class="next">&#8250;</a>
+                  </li>
+                  <li id="slide3" class="slide">
+                    <img src="css/img/Slider-img1.jpg">
+                    <a href="#slide2" class="previous">&#8249;</a>
+                    <a href="#slide1" class="next">&#8250;</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section role="article" class="About" id="about">
+        <div class="Center">
+          <h2>about us</h2>
+          <p>Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit<br> amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio.</p>
+          <div class="Line"></div>
+          <div class="about-items">
+            <div class="about-item item1">
+              <img src="css/img/about-img1.jpg">
+              <h3>The Possibilities</h3>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ac odio dolor.
+              Mauris ullamcorper tempor luctus. Vivamus ultrices fermentum leo, a dictum augue
+              fermentum convallis. Nulla rutrum, risus ac tempus pulvinar, ante mauris porttitor
+              arcu, et cursus velit odio a enim. Aliquam erat volutpat. Maecenas dapibus et ipsum
+              vel suscipit. Nunc feugiat massa id vestibulum pharetra.
+              <br>
+              <a href="#readmore">Read More</a>
+            </div>
+            <div class="about-item item2">
+              <img src="css/img/about-img2.jpg">
+              <h3>Don't Waste Time</h3>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ac odio dolor.
+              Mauris ullamcorper tempor luctus. Vivamus ultrices fermentum leo, a dictum augue
+              fermentum convallis. Nulla rutrum, risus ac tempus pulvinar, ante mauris porttitor
+              arcu, et cursus velit odio a enim. Aliquam erat volutpat. Maecenas dapibus et ipsum
+              vel suscipit. Nunc feugiat massa id vestibulum pharetra.
+              <br>
+              <a href="#readmore">Read More</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section role="complementary" class="Services" id="services">
+        <div class="Center">
+          <h2>our Services</h2>
+          <p> Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent<br> taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+          <div class="Line"></div>
+          <div class="Serviceside">
+            <ul>
+              <li class="Development"><a href="#services">
+                  <h4>DEVELOPMENT</h4>
+                </a></li>
+              <li class="Desdin"><a href="#services">
+                  <h4>DESIGN</h4>
+                </a></li>
+              <li class="Concept"><a href="#services">
+                  <h4>CONCEPT</h4>
+                </a></li>
+              <li class="System"><a href="#services">
+                  <h4>SYSTEM</h4>
+                </a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section role="presentation" class="Pricing" id="pricing">
+        <div class="Center">
+          <h2>Pricing</h2>
+          <p>All plans come with unlimited disk space. Our support can be as quick as 15 minutes to get a response. Sed non<br>
+            mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu.</p>
+          <div class="Line"></div>
+          <div class="Pricingside">
+            <ul>
+              <li>
+                <div class="Basic">
+                  <h5>basic</h5>
+                </div>
+                <div class="Dollar">
+                  <h2>$27.50</h2>
+                </div>
+                <div class="Band">
+                  <p>2,000 GB <span>Band width</span></p>
+                </div>
+                <div class="Band">
+                  <p>32 GB<span>memory</span></p>
+                </div>
+                <div class="Band">
+                  <p>Support<span>24 Hours</span></p>
+                </div>
+                <div class="Band last">
+                  <p>Update<span>$20</span></p>
+                </div>
+                <div class="Order">
+                  <a href="#">order now</a>
+                </div>
+              </li>
+              <li>
+                <div class="Basic">
+                  <h5>Biz</h5>
+                </div>
+                <div class="Dollar">
+                  <h2>$44.50</h2>
+                </div>
+                <div class="Band">
+                  <p>5,500 GB <span>Band width</span></p>
+                </div>
+                <div class="Band">
+                  <p>64 GB<span>memory</span></p>
+                </div>
+                <div class="Band">
+                  <p>Support<span>1 Hour</span></p>
+                </div>
+                <div class="Band last">
+                  <p>Update<span>$10</span></p>
+                </div>
+                <div class="Order">
+                  <a href="#">order now</a>
+                </div>
+              </li>
+              <li>
+                <div class="Basic">
+                  <h5>Pro</h5>
+                </div>
+                <div class="Dollar">
+                  <h2>$72.50</h2>
+                </div>
+                <div class="Band">
+                  <p>12,000 GB <span>Band width</span></p>
+                </div>
+                <div class="Band">
+                  <p>128 GB<span>memory</span></p>
+                </div>
+                <div class="Band">
+                  <p>Support<span>15 Mins</span></p>
+                </div>
+                <div class="Band last">
+                  <p>Update<span>Free</span></p>
+                </div>
+                <div class="Order">
+                  <a href="#">order now</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section role="dialog" class="Contact" id="contact">
+        <div class="contact-map" id="contact-map"></div>
+        <div class="contact-area">
+          <div class="contact-items">
+            <div class="contact-item">
+              <h1 class="contact-item-title">Contact Us</h1>
+            </div>
+            <div class="Leftside">
+              <form action="#">
+                <fieldset>
+                  <p><input type="text" value="" placeholder="NAME" class="field"></p>
+                  <p><input type="email" value="" placeholder="EMAIL" class="field"></p>
+                  <p><input type="text" value="" placeholder="TITLE" class="field"></p>
+                  <p><textarea cols="2" rows="2" placeholder="MESSAGE"></textarea></p>
+                  <p><input type="submit" value="send" class="button"></p>
+                </fieldset>
+              </form>
+            </div>
+            <div class="Rightside">
+              <h3>Get in touch !</h3>
+              <address>
+                Zmaja od Bosne bb<br>72000 Zenica
+              </address>
+              <address class="Number">
+                (+387) 032 555 666, (+387) 063 333 222<br>(+387) 061 555 777
+              </address>
+              <address class="Email">
+                <a href="mailto:g.popovic9@gmail.com">g.popovic9@gmail.com</a>
+              </address>
+              <ul>
+                <li><a href="http://www.facebook.com"><img src="css/img/facebook-icn.png" alt="image"></a></li>
+                <li><a href="http://twitter.com"><img src="css/img/twitter-icn.png" alt="image"></a></li>
+                <li><a href="http://plus.google.com"><img src="css/img/google-plus-icn.png" alt="image"></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer role="contentinfo">
+      <div class="Central">
+        <div class="copyright">
+          <span class="copyright-label">Copyright</span>
+          <span class="copyright-title">GoranPopovic77</span>
+        </div>
+        <div class="social-menu">
+          <nav>
+            <ul>
+              <li>
+                <a class="fa fa-twitter" href="http://twitter.com" title="Twitter"></a>
+              </li>
+              <li>
+                <a class="fa fa-instagram" href="http://instagram.com" title="Instagram"></a>
+              </li>
+              <li>
+                <a class="fa fa-facebook" href="http://facebook.com" title="Facebook"></a>
+              </li>
+              <li>
+                <a class="fa fa-google-plus" href="http://plus.google.com" title="Google Plus"></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </footer>
+    <script src="js/site.js"></script>
+  </body>
+</html>
