@@ -8,7 +8,7 @@ There is no need for installation, you can simply start index.html from the fold
 
 ## Usage
 
-It iss only for student usage
+It is only for student usage
 
 ## Autor
 GoranPopovic77
